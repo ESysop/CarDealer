@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace SodaMachineV1
 	{
-	abstract class Soda
+	public class Soda
 		{
+		public string sodaFlavor { get; set; }
+		public double sodaCost { get; set; }
 		public Soda ()
 			{
 

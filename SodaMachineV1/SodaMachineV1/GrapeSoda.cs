@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace SodaMachineV1
 	{
-	public class GrapeSoda
+	public class GrapeSoda : Soda
 		{
+		public List<Soda> grapeSoda;
+
 		public GrapeSoda ()
 			{
-
+			grapeSoda = new List<Soda>();
 			}
 		}
 	}
