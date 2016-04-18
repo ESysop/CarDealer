@@ -8,8 +8,12 @@ namespace SodaMachineV1
 	{
 	class Program
 		{
+		
 		static void Main (string[] args)
 			{
+			SodaMachine sodaMachine = new SodaMachine();
+			sodaMachine.bootMachine();
 			}
+		
 		}
 	}

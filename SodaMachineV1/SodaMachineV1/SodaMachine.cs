@@ -8,5 +8,17 @@ namespace SodaMachineV1
 	{
 	class SodaMachine
 		{
+		GrapeSoda grapeSoda;
+		Inventory inventory;
+		Soda soda;
+		public SodaMachine ()
+			{
+			grapeSoda = new GrapeSoda();
+			}
+		public void bootMachine ()
+			{
+			grapeSoda.fillSodaList();
+			Console.ReadKey();
+			}
 		}
 	}
