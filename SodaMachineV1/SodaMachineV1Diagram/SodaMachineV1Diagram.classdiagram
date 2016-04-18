@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d55edd74-1952-4210-8f3d-2bc9b88d139b" name="SodaMachineV1Diagram" linkedPackageId="95987044-bf10-4784-8cf6-c92c0459d780" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d78bb8ad-3bf4-4a5c-8922-cc63e0987048">
+      <profileInstance Id="d4831392-4963-4c66-8eef-71df0b5f2b24" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1d517efe-44be-4576-808b-e740460a367f">
+      <profileInstance Id="0da967c1-375f-4b73-b27e-e92792a0d6f2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="65628041-b098-4785-8908-c226e83b22f7" name="SodaMachine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cdb49a20-c16b-4e15-8cbf-d172fb3a8b67" />
+        <targetEnds>
+          <association Id="7c8e619d-2a6d-4426-8f21-6d3d9c61d3b6" isDerived="false" sourceEndRoleName="SodaMachine" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5d7b6864-d952-408b-aa14-702a201d114a" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="baf4a08a-cc12-4f87-b967-7b150bd04777" name="SodaMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2c5f19a0-9651-4029-8d62-09a8246e25c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2c4b40c1-03a7-4caf-aba6-10843c6ae29b" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7efbf8c5-f4d7-49c5-bfbb-5a3078f14bf9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ca555c1-209e-4661-ad41-63a08b2238c3" />
+          </association>
+          <association Id="6cc1f7b0-2a1b-45c6-a7fa-988d9e2e9fde" isDerived="false" sourceEndRoleName="SodaMachine" targetEndRoleName="Inventory" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bfc2050b-ec0b-4e35-9f67-5b91845018e9" LastKnownName="Inventory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a4c2222-dcd5-4987-9272-7f6bda7889f4" name="SodaMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2898714d-4032-475f-a40c-0fd3c0798cd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ea6f39f-063b-476a-aaee-3ad1ba96233d" name="Inventory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a35650a8-629a-4a0c-abf3-b120879346c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="944cb9c4-bfc7-4058-ad20-72c5b8b415f9" />
+          </association>
+          <association Id="5f6036c9-aa72-44ca-bf90-e53d3ea0781f" isDerived="false" sourceEndRoleName="SodaMachine" targetEndRoleName="Dispenser" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2a213464-d7d3-45f1-9b06-b5c090129107" LastKnownName="Dispenser" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77577c73-5058-4967-b988-ef9b1b2fd8ba" name="SodaMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="322838d3-1fe9-4994-b2b0-b39bb2e9081b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4f9e8558-ba12-44b0-a514-725f0a48d3ec" name="Dispenser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94c4917f-7dd3-4613-adcf-1ab4539f5559" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b2a031cd-a843-4629-afab-8f3067d84eba" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="fbedec13-97fa-4d54-8801-fb7faee2c876" name="MoneyInsert" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="209a2e9e-fe58-443b-ad20-209c3b740423" />
+          </operation>
+          <operation Id="83cb2205-592e-48f0-8a40-42547f7d129d" name="SodaChoice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8b142c02-e8f8-4243-afc9-dda53bf44b40" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5d7b6864-d952-408b-aa14-702a201d114a" name="Register" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15f2d6d8-1355-4b57-9bd3-0101f426fe89" />
+        <targetEnds>
+          <association Id="d956b73f-ebf3-4a18-adbc-2c6d7bd18da8" isDerived="false" sourceEndRoleName="Register" targetEndRoleName="Coins" isLeaf="false" isAbstract="false">
+            <classMoniker Id="17a44ae7-c9c0-48ed-bf2b-9a5a0c591113" LastKnownName="Coins" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d30bd892-e451-4a6e-b572-fab7054c455d" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a7d6397d-fdd2-47e2-be8c-906254b78bae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="594c0a8e-e123-449c-bd78-db5ef4ed54d7" name="Coins" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5ca7ad9-94c1-47a6-abf4-36f875e18f12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7947257-c103-4f8f-be56-711b13d317c9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2a213464-d7d3-45f1-9b06-b5c090129107" name="Dispenser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="416c2676-e5ef-454a-a870-aba323763cf5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d24c7965-692b-4e9e-944f-a69b6f9dae62" name="Penny" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b74c4b4-64c6-43a3-83f4-7da124461b3b" />
+        <ownedOperationsInternal>
+          <operation Id="be61d80a-4875-4a0d-9ae1-d7f8754b49cf" name="listOfPennies" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45064a40-9f6a-4d70-8960-7ff843f65330" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d8655e6e-c71d-4834-b618-b4cc09e74c94" name="Nickle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e95f5328-76d1-4ddb-9856-e84a5e992dca" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8751bd6-d522-49c4-80c7-d9e571a0483d" name="Dime" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="177837e5-ff72-48dd-9bf6-eb60898e9ad8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a0d3884-cb80-4628-90be-a91e71dcadb7" name="Quarter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ab81e1d8-f6ab-4553-a9e5-d7bc60acfdc8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3865d0ec-846b-4165-892f-2eae6aa24767" name="GrapeSoda" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f9a804c-ffc8-4760-920e-3ff5c5268c47" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0f427773-12c0-45cd-946f-5bd7b359e867" name="OrangeSoda" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c5072037-30b3-4aaf-a338-72743b7340f2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6d8fb964-d618-49cf-b99f-82c2c4b1841b" name="MeatSoda" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2fd33f01-8d05-431e-a0d5-3c8c8a9e74e3" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bfc2050b-ec0b-4e35-9f67-5b91845018e9" name="Inventory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6db902b7-f315-439d-87d5-c6fdf5c69329" />
+        <targetEnds>
+          <association Id="9d6bb3cc-806d-4989-88fa-d7e9ba965bcd" isDerived="false" sourceEndRoleName="Inventory" targetEndRoleName="Soda" isLeaf="false" isAbstract="false">
+            <classMoniker Id="023a7649-c7fd-47f4-b267-5c39aba80b9b" LastKnownName="Soda" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="45314c04-c5ca-4403-970e-1d0dbd5f2032" name="Inventory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74231830-6348-4a2b-b583-1b0054ec06d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5828fe72-4282-4a64-8210-c1dbe206899f" name="Soda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8ae93dc9-2902-4dc2-a8e9-73680665a200" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd780d12-e364-4be5-b0b7-0e827dfdec3f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17a44ae7-c9c0-48ed-bf2b-9a5a0c591113" name="Coins" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76647101-6139-4801-832e-832fb643d46a" />
+        <targetEnds>
+          <association Id="7c00053a-b23c-4eff-be87-fbfc136ac008" isDerived="false" sourceEndRoleName="Coins" targetEndRoleName="Penny" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d24c7965-692b-4e9e-944f-a69b6f9dae62" LastKnownName="Penny" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bf10d4de-bf15-4800-9eb9-5d629cc93dfe" name="Coins" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9422072c-edb9-4d53-93f3-fcad9c347110" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="571ba747-9d9e-4f66-8acc-49814cff4f91" name="Penny" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f495d527-3676-44da-8231-4307ce31dbfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="332340ac-09cb-41da-b7b3-3718cab0804c" />
+          </association>
+          <association Id="2795bb63-7da9-4912-8895-df6b93e10eed" isDerived="false" sourceEndRoleName="Coins" targetEndRoleName="Quarter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9a0d3884-cb80-4628-90be-a91e71dcadb7" LastKnownName="Quarter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cca442d-0383-4886-b50f-c68e2d2ddcc2" name="Coins" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e956acb-6e06-4861-b00a-3636a8b342e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="03033b36-d8ce-4bdf-a574-72e1377c6dd1" name="Quarter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cc63844-00e6-46ff-8319-baa94973557f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe0322a0-82d3-45c4-8004-a5f9245c00d9" />
+          </association>
+          <association Id="60d426e2-85b0-403a-84a0-2473a38e78f1" isDerived="false" sourceEndRoleName="Coins" targetEndRoleName="Dime" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8751bd6-d522-49c4-80c7-d9e571a0483d" LastKnownName="Dime" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e4f6332-13ff-440f-b5b8-5d843472381c" name="Coins" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00535b29-0827-4cdf-8c94-aafb36e4bc37" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2cc3770f-64e5-4810-8bf5-4e41000a3ae3" name="Dime" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fba7ed15-7cee-4ecb-b76b-46cb79e7e7a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="75db541f-9414-484d-a151-1f608cb7bc2e" />
+          </association>
+          <association Id="e5eb91eb-2ee8-4ea1-84b7-a4f621f06160" isDerived="false" sourceEndRoleName="Coins" targetEndRoleName="Nickle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d8655e6e-c71d-4834-b618-b4cc09e74c94" LastKnownName="Nickle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd391b91-e873-4e61-ac76-22801c1f7267" name="Coins" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b965ff1-d9b4-4517-9aab-349ef54b6ad7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6037ac06-d770-4d47-bf73-e17ef9c7cfd8" name="Nickle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f442334-f013-440b-a1bf-60b22d7ade74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d8cc3141-e039-4f07-83c5-8dd71c95e2d4" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="57c34d17-ce97-4730-93a8-78bd03c74590" name="MonetaryValue" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f3fac3b-003b-4420-ad23-a9222877bdd3" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7d506696-9fd5-4f02-87ba-21fbc5ad5e26" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17fd6abe-84e2-4f92-8b9a-5f7319425a3e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="05607343-059a-4d04-98a5-7e1273f25d09" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="77514da3-c818-4832-b1c7-ba6014ef8af8" />
+        <targetEnds>
+          <association Id="bc53ba8c-165a-44db-995e-cf7a4fe88186" isDerived="false" sourceEndRoleName="Program" targetEndRoleName="SodaMachine" isLeaf="false" isAbstract="false">
+            <classMoniker Id="65628041-b098-4785-8908-c226e83b22f7" LastKnownName="SodaMachine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cdab6b6f-2591-4f62-a09d-879c0ec49c86" name="Program" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f60dbdfb-5466-4b07-abc7-c7283faacce1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e7b54aa-3641-45e3-8375-7cc04a317ca9" name="SodaMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="248ad6ab-95db-4436-bec6-5c422b0962a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="41347b29-cd60-4cac-84ce-db724ca88ba2" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="023a7649-c7fd-47f4-b267-5c39aba80b9b" name="Soda" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b980493f-cdf1-44f8-97c0-cec2706041d7" />
+        <targetEnds>
+          <association Id="56584ed3-e173-460d-acbc-0b2cb5f330a0" isDerived="false" sourceEndRoleName="Soda" targetEndRoleName="GrapeSoda" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3865d0ec-846b-4165-892f-2eae6aa24767" LastKnownName="GrapeSoda" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="19713daf-e0ec-485f-a755-ba4708639e26" name="Soda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c7f0aa2e-07db-4375-af64-9fde5c80ea80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6df55fe-2d41-48d9-865c-665d848030c3" name="GrapeSoda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0c98ea11-b032-4744-a11c-ffa2ff137274" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee2c54e6-1896-4337-a647-8855bc9f25d9" />
+          </association>
+          <association Id="d830e34f-a81d-4aff-ad86-fafefabee352" isDerived="false" sourceEndRoleName="Soda" targetEndRoleName="OrangeSoda" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0f427773-12c0-45cd-946f-5bd7b359e867" LastKnownName="OrangeSoda" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63673d2e-d13b-4c46-9503-56d1b595b8cd" name="Soda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2621c3e6-b82b-4747-bc3e-e7fc3a833513" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a5d2b6a-01c2-4590-aba5-839746451d70" name="OrangeSoda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99f8bbd6-dce6-41f7-aa4b-a90690a56928" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ba1d234-724b-4e47-86be-cf20904949d8" />
+          </association>
+          <association Id="0732061e-b587-4759-9aaa-d403455c6b20" isDerived="false" sourceEndRoleName="Soda" targetEndRoleName="MeatSoda" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6d8fb964-d618-49cf-b99f-82c2c4b1841b" LastKnownName="MeatSoda" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9586fcf-f7e0-4331-8d14-3996af3b5380" name="Soda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2be8f9f4-410b-47b0-adc9-7394e8d8b053" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f665d7f-1818-44ff-93d4-e68a60cfe8a3" name="MeatSoda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58c0210e-780b-4e9d-beba-b5fb715545f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afe87327-4b00-4243-a777-16f1bfc0cb67" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="95987044-bf10-4784-8cf6-c92c0459d780" name="SodaMachineV1Diagram">
+    <elementDefinition Id="df508350-5b53-42b7-a218-86ef1f405d2b" />
+  </package>
+</logicalClassDesignerModel>
